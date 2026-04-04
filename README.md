@@ -1,137 +1,101 @@
-# Lista-JavaScript
-LISTA DE EXERCÍCIOS SOBRE FUNÇÕES JAVASCRIPT 
+<div align="center">
 
-O objetivo desta atividade é proporcionar ao aluno uma prática sobre a criação e utilização de funções em JavaScript. Os exercícios cobrem conceitos fundamentais como definição de funções, parâmetros, valores de retorno, e o uso de funções em operações matemáticas.
+# ⚡ Lista de Exercícios — Funções JavaScript
 
-___________________________________________________________________________________________________________________________________________
-Questão 1: Soma simples
+### Ficha de Exercícios 1 — Funções e Operações Matemáticas
 
-Descrição: Crie uma função chamada somar() que recebe dois números como parâmetros a e
-b e retorna a soma deles.
+<br>
 
-Requisitos:
+![JavaScript](https://img.shields.io/badge/JavaScript-100%25-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
 
- A função deve receber dois parâmetros numéricos.
+<br>
 
- Retornar o resultado da soma dos dois números.
-___________________________________________________________________________________________________________________________________________
-Questão 2: Multiplicação simples
+![Tipo](https://img.shields.io/badge/Tipo-Lista_de_Exercícios-4A4A4A?style=flat-square)
+![Exercícios](https://img.shields.io/badge/Exercícios-10-FFB300?style=flat-square)
+![Instituição](https://img.shields.io/badge/Instituição-CESAR_School-6A0DAD?style=flat-square)
+![Status](https://img.shields.io/badge/Status-Concluído-2E8B57?style=flat-square)
 
-Descrição: Crie uma função chamada multiplicar() que recebe dois números como
-parâmetros a e b e retorna o produto deles.
+<br>
 
-Requisitos:
+> *Lista de exercícios práticos sobre criação e utilização de funções em JavaScript,*
+> *cobrindo definição, parâmetros, retorno e operações matemáticas.*
 
- A função deve aceitar dois parâmetros numéricos.
+</div>
 
- O retorno deve ser o produto dos dois números fornecidos.
-___________________________________________________________________________________________________________________________________________
-Questão 3: Subtração simples
+---
 
-Descrição: Crie uma função chamada subtrair() que recebe dois números como parâmetros
-a e b e retorna a diferença do primeiro pelo segundo.
+## Sobre o Repositório
 
-Requisitos:
+Este repositório contém a resolução da **Ficha de Exercícios 1** da disciplina de Desenvolvimento Web, com foco na criação e reutilização de funções em **JavaScript puro**. Os exercícios evoluem progressivamente, incentivando o reaproveitamento de funções criadas anteriormente.
 
- A função deve aceitar dois parâmetros.
+---
 
- Retornar o resultado da subtração entre o primeiro e o segundo parâmetro.
-___________________________________________________________________________________________________________________________________________
-Questão 4: Divisão com verificação de zero
+## Estrutura
 
-Descrição: Crie uma função chamada dividir() que recebe dois números como parâmetros
-a e b e retorna o resultado da divisão do primeiro pelo segundo. A função deve verificar se o
-segundo número é zero e retornar uma mensagem de erro.
+```
+Lista-JavaScript/
+└── FichaDeExercicios1/   # Resoluções dos 10 exercícios
+```
 
-Requisitos:
+---
 
- A função deve aceitar dois parâmetros.
+## Exercícios
 
- Se o divisor for zero, retornar a mensagem "Erro: divisão por zero".
+| # | Função | Descrição |
+|---|---|---|
+| 1 | `somar(a, b)` | Retorna a soma de dois números |
+| 2 | `multiplicar(a, b)` | Retorna o produto de dois números |
+| 3 | `subtrair(a, b)` | Retorna a diferença entre dois números |
+| 4 | `dividir(a, b)` | Divisão com tratamento de divisão por zero |
+| 5 | `calcularMedia(n1, n2, n3, n4)` | Média aritmética de 4 notas (reusa `dividir()`) |
+| 6 | `elevarPotencia(base, exp)` | Base elevada ao expoente com `Math.pow()` |
+| 7 | `calcularAreaRetangulo(l, a)` | Área do retângulo (reusa `multiplicar()`) |
+| 8 | `verificarParOuImpar(n)` | Retorna `"par"` ou `"ímpar"` |
+| 9 | `calcularRaizQuadrada(n)` | Raiz quadrada com `Math.sqrt()` |
+| 10 | `calcularHipotenusa(c1, c2)` | Hipotenusa pelo teorema de Pitágoras (reusa Q1, Q6 e Q9) |
 
- Senão, retornar o resultado da divisão.
+---
 
+## Conceitos Praticados
 
-Observação: Pesquise sobre tratamento de exceções com javascript
-___________________________________________________________________________________________________________________________________________
-Questão 5: Calculadora de média
+```
+Funções         → declaração, parâmetros e retorno de valores
+Reutilização    → funções compostas que chamam outras funções
+Tratamento      → verificação de divisão por zero com condicionais
+Math API        → Math.pow(), Math.sqrt()
+Operadores      → módulo (%), aritméticos e comparação
+```
 
-Descrição: Crie uma função chamada calcularMedia() que recebe quatro notas como
-parâmetros nota1, nota2, nota3 e nota4 e retorna a média aritmética dessas notas.
+---
 
-Requisitos:
+## Como Executar
 
- A função deve receber quatro parâmetros numéricos.
+Qualquer arquivo `.js` pode ser rodado diretamente no terminal com Node.js:
 
- Retornar a média aritmética (soma dos números dividida pela quantidade de notas).
+```bash
+# Executar um exercício
+node FichaDeExercicios1/nome_do_arquivo.js
+```
 
+> Ou cole o código no console do navegador (F12 → Console) para testar.
 
-Observação: Tente reaproveitar a função dividir() criada na questão 4.
-___________________________________________________________________________________________________________________________________________
-Questão 6: Exponeciação
+---
 
-Descrição: Crie uma função chamada elevarPotencia() que recebe dois números como
-parâmetros base e expoente e retorna o resultado da base elevada ao expoente.
+## Autor
 
-Requisitos:
+<div align="center">
 
- A função deve aceitar dois parâmetros: base e expoente.
+**Luis Nunes**
+Estudante de ADS — CESAR School
 
- Retornar o resultado da base elevada ao expoente.
+[![GitHub](https://img.shields.io/badge/GitHub-Luisr--nunes-181717?style=flat-square&logo=github)](https://github.com/Luisr-nunes)
 
+</div>
 
-Observação: Pesquise sobre a função pow() da biblioteca Math do Javascript.
-___________________________________________________________________________________________________________________________________________
-Questão 7: Área de um retângulo
+---
 
-Descrição: Crie uma função chamada calcularAreaRetangulo() que recebe dois números
-como parâmetros largura e altura e retorna a área do retângulo.
+<div align="center">
 
-Requisitos:
+*🔧 Funções bem escritas hoje são a base do código limpo de amanhã.*
 
- A função deve receber dois parâmetros: largura e altura.
-
- Retornar a área do retângulo (largura multiplicada pela altura).
-
-
-Observação: Tente reaproveitar a função multiplicar() criada na questão 2
-___________________________________________________________________________________________________________________________________________
-Questão 8: Par ou ímpar
-
-Descrição: Crie uma função chamada verificarParOuImpar() que recebe um número como
-parâmetro (numero) e retorna se este número é par ou ímpar.
-
-Requisitos:
-
- A função deve receber um número como parâmetro.
-
- Retornar "par" se o número for par e "ímpar" se for ímpar.
-___________________________________________________________________________________________________________________________________________
-Questão 9: Raiz Quadrada
-
-Descrição: Crie uma função chamada calcularRaizQuadrada() que recebe um número
-como parâmetro (numero) e retorna sua raiz quadrada.
-
-Requisitos:
-
- A função deve receber um número como parâmetro.
-
- Retornar a raiz quadrada do número.
-
-
-Observação: Pesquise sobre a função sqrt() da biblioteca Math do Javascript.
-___________________________________________________________________________________________________________________________________________
-Questão 10: Cálculo de Hipotenusa
-
-Descrição: Crie uma função chamada calcularHipotenusa()que receba os comprimentos
-dos dois catetos de um triângulo retângulo (cateto1 e cateto2) e retorne o valor da hipotenusa..
-
-Requisitos:
-
- A função deve aceitar dois parâmetros: os comprimentos dos catetos.
-
- Deve retornar a hipotenusa usando a fórmula √cateto1^2 + √cateto2^2
-
-
-Observação: Tente reaproveitar a função somar() criada na questão 1 e elevarPotencia()
-criada na questão 6 e calcularRaizQuadrada() criada na questão 9.
+</div>
